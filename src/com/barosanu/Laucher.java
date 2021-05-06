@@ -10,7 +10,7 @@ public class Laucher extends Application{
 	}
 
 	@Override
-	public void start(Stage arg0) throws Exception {
+	public void start(Stage stage) throws Exception {
 		stage.show();
 	}	
 
