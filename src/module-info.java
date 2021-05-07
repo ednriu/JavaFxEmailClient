@@ -5,5 +5,5 @@ module JavaFxEmailClient {
 	requires javafx.web;
 	
 	opens com.barosanu;
-	opens com.barosanu.view;
+	opens com.barosanu.controller;
 }
