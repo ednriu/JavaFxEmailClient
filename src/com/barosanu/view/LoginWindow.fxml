@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="345.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.barosanu.view.LoginWindowController">
+   <children>
+      <Button layoutX="274.0" layoutY="277.0" mnemonicParsing="false" onAction="#loginButtonAction" text="Zaloguj" />
+      <Label layoutX="68.0" layoutY="122.0" text="Adres Email:" />
+      <Label layoutX="68.0" layoutY="149.0" text="Hasło:" />
+      <TextField fx:id="emailAddressField" layoutX="167.0" layoutY="118.0" prefHeight="25.0" prefWidth="272.0" />
+      <PasswordField fx:id="passwordField" layoutX="167.0" layoutY="145.0" prefHeight="25.0" prefWidth="272.0" />
+      <Label fx:id="errorLabel" layoutX="289.0" layoutY="332.0" />
+   </children>
+</AnchorPane>
