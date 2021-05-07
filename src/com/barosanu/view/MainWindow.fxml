@@ -5,13 +5,14 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.WebView?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.barosanu.controller.MainWindowController">
    <children>
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="893.0">
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="893.0" AnchorPane.bottomAnchor="666.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="Plik">
             <items>
@@ -21,7 +22,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Edytuj">
             <items>
-              <MenuItem mnemonicParsing="false" text="Opcje" />
+              <MenuItem mnemonicParsing="false" onAction="#optionsAction" text="Opcje" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Pomoc">
@@ -31,21 +32,16 @@
           </Menu>
         </menus>
       </MenuBar>
-      <TableView layoutY="27.0" prefHeight="664.0" prefWidth="200.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
-        </columns>
-      </TableView>
-      <TableView layoutX="200.0" layoutY="27.0" prefHeight="206.0" prefWidth="709.0">
+      <TableView fx:id="emailsTableView" layoutX="207.0" layoutY="29.0" prefHeight="204.0" prefWidth="702.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
         <columns>
           <TableColumn prefWidth="102.0" text="Autor" />
-          <TableColumn minWidth="0.0" prefWidth="254.0" text="Temat" />
-            <TableColumn prefWidth="73.0" text="Odbiorca" />
+          <TableColumn minWidth="0.0" prefWidth="256.0" text="Temat" />
+            <TableColumn prefWidth="71.0" text="Odbiorca" />
             <TableColumn prefWidth="52.0" text="Rozmiar" />
             <TableColumn prefWidth="227.0" text="Data" />
         </columns>
       </TableView>
-      <WebView layoutX="200.0" layoutY="233.0" prefHeight="459.0" prefWidth="709.0" />
+      <WebView fx:id="emailWebView" layoutX="207.0" layoutY="232.0" prefHeight="460.0" prefWidth="702.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="231.0" />
+      <TreeView fx:id="emailsTreeView" layoutX="8.0" layoutY="27.0" prefHeight="665.0" prefWidth="206.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="27.0" />
    </children>
 </AnchorPane>
